@@ -191,5 +191,6 @@ RUN chmod +x /usr/local/bin/start.sh
 
 EXPOSE 5601 9200 9300 9600 5044
 VOLUME /var/lib/elasticsearch
+VOLUME /etc/logstash/conf.d
 
 CMD [ "/usr/local/bin/start.sh" ]
